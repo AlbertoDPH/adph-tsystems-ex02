@@ -88,6 +88,9 @@ public class CitaServiceImpl implements ICitaService {
 		iCitaDAO.deleteById(id);
 	}
 
+	/**
+	 * implemneyamos el metodo findByDentistaId utilizando el metodo iCitaDAO
+	 */
 	@Override
 	public List<Cita> findCitasByDentistaId(Integer id) {
 		return iCitaDAO.findByDentistaId(id);

@@ -59,7 +59,14 @@ public interface ICitaService {
 	 */
 	public void eliminarCita(Integer id);// Elimina el cita DELETE
 	
-	public List<Cita> findCitasByDentistaId(Integer dentistaId); //busca citas por dentista
+	
+	
+	/**
+	 * la utilizaremos para busacar las citas quie tiene un dentidsta
+	 * @param dentistaId
+	 * @return
+	 */
+	public List<Cita> findCitasByDentistaId(Integer id); //busca las citas de un dentista
 
 
 }
