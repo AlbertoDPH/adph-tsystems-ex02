@@ -26,9 +26,9 @@ Se compone de varios paquetes, entidades e interfaces encargados de la gestion d
 
 ------------
 ### Módelo ER y Módelo Relacional
-[Modelo ER y Moldelo Relacional](https://github.com/AlbertoDPH/adph-tsystems-ex01/blob/master/EX01_PruebaTecnica.jpg)
+[Modelo ER y Moldelo Relacional](https://github.com/AlbertoDPH/adph-tsystems-ex02/blob/master/EX02_ClinicaDental.jpg)
 
 ### Consultas Postman Json
-[Consultas Postman Json](https://github.com/AlbertoDPH/adph-tsystems-ex01/blob/master/Consultas%20postman%20EX01.postman_collection.json "Consultas Postman Json")
+[Consultas Postman Json](https://github.com/AlbertoDPH/adph-tsystems-ex02/blob/master/Consultas%20postman%20EX02-ClinicaDental.postman_collection.json)
 
 ------------
