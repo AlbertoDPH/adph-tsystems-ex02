@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.delpozo.dao.IClienteDAO;
+import com.delpozo.dto.Cita;
 import com.delpozo.dto.Cliente;
 
 @Service
@@ -43,5 +44,11 @@ public class ClienteServiceImpl implements IClienteService{
 	
 		iClienteDAO.deleteById(id);
 	}
+	
+	
+	
+	
+	
+	
 
 }

@@ -2,6 +2,7 @@ package com.delpozo.service;
 
 import java.util.List;
 
+import com.delpozo.dto.Cita;
 import com.delpozo.dto.Dentista;
 
 public interface IDentistaService {
@@ -16,5 +17,6 @@ public interface IDentistaService {
 		public Dentista actualizarDentista(Dentista dentista); // Actualiza datos del dentista UPDATE
 
 		public void eliminarDentista(Integer id);// Elimina el dentista DELETE
+
 
 }

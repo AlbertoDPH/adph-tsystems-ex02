@@ -15,6 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.delpozo.dto.TipoIntervencion;
 import com.delpozo.service.TipoIntervencionServiceImpl;
 
+/**
+ * Clase controladora de la API REST para las peticiones HTTP relacionadas con tipo_intervenciones.
+ * @author Alberto
+ *
+ */
+
 @RestController
 @RequestMapping("/api")
 public class TipoIntervencionController {

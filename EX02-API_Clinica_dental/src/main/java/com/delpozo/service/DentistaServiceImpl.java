@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.delpozo.dao.IDentistaDAO;
+import com.delpozo.dto.Cita;
 import com.delpozo.dto.Dentista;
 
 @Service
@@ -43,5 +44,10 @@ public class DentistaServiceImpl implements IDentistaService{
 	
 		iDentistaDAO.deleteById(id);
 	}
+	
+//	@Override
+//    public List<Cita> findCitasByDentistaId(Integer id) {
+//        return iDentistaDAO.findByDentistaId(id);
+//    }
 
 }

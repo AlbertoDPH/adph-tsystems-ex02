@@ -41,10 +41,9 @@ CREATE TABLE citas (
   id_dentista INT NOT NULL,
   id_tipo_intervencion INT NOT NULL,
   fecha_hora DATETIME NOT NULL,
-  descripcion TEXT,
-  FOREIGN KEY (id_cliente) REFERENCES clientes(id),
-  FOREIGN KEY (id_dentista) REFERENCES dentistas(id),
-  FOREIGN KEY (id_tipo_intervencion) REFERENCES tipo_intervenciones(id)
+  FOREIGN KEY (id_cliente) REFERENCES clientes(id) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (id_dentista) REFERENCES dentistas(id)ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (id_tipo_intervencion) REFERENCES tipo_intervenciones(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- Clientes
@@ -59,23 +58,23 @@ INSERT INTO clientes (nombre, apellido, email, contrasena) VALUES
 INSERT INTO dentistas (nombre, apellido, email, contrasena, especialidad) VALUES
   ('Jordi', 'Camps', 'jordi.camps@suemail.com', 'pass_jordi', 'Ortodoncia'),
    ('Oriol', 'Gimenez', 'oriol.gimenez@suemail.com', 'pass_ori', 'Periodoncia'),
-  ('Laia', 'Perez', 'laia.perez@suemail.com', 'pass_laia', 'Implantología'),
+  ('Laia', 'Perez', 'laia.perez@suemail.com', 'pass_laia', 'Implantologia'),
   ('Xavier', 'Navarro', 'xavier.navarro@suemail.com', 'pass_xavi', 'Ortodoncia'),
   ('Sofia', 'Casals', 'sofia.casals@suemail.com', 'pass_sofia', 'Prostodoncia');
 
 -- Tipo de Intervenciones
 INSERT INTO tipo_intervenciones (nombre, descripcion, duracion_estimada) VALUES
   ('Limpieza dental', 'Limpieza dental', 30),
-  ('Extracción', 'Extracción de una pieza dental', 45),
-  ('Empaste', 'Empaste de una pieza dental', 60),
+  ('Extraccion', 'Extraccion pieza dental', 45),
+  ('Empaste', 'Empaste pieza dental', 60),
   ('Endodoncia', 'Tratamiento ortodoncia', 90),
   ('Blanqueamiento', 'Blanqueamiento dental', 60);
   
 -- Citas
-INSERT INTO citas (id_cliente, id_dentista, id_tipo_intervencion, fecha_hora, descripcion) VALUES
-  (1, 2, 1, NOW(), 'Limpieza dental'),
-  (2, 3, 2, NOW(), 'Extraccion de muela'),
-  (3, 4, 3, NOW(), 'Empaste'),
-  (4, 5, 4, NOW(), 'Endodoncia'),
-  (5, 1, 5, NOW(), 'Blanqueamiento dental');
+INSERT INTO citas (id_cliente, id_dentista, id_tipo_intervencion, fecha_hora) VALUES
+  (1, 2, 1, NOW()),
+  (2, 3, 2, NOW()),
+  (3, 4, 3, NOW()),
+  (4, 5, 4, NOW()),
+  (5, 1, 5, NOW());
 

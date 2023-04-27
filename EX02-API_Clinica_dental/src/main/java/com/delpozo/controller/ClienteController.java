@@ -15,6 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.delpozo.dto.Cliente;
 import com.delpozo.service.ClienteServiceImpl;
 
+/**
+ * Clase controladora de la API REST para las peticiones HTTP relacionadas con clientes
+ * @author Alberto
+ *
+ */
+
 @RestController
 @RequestMapping("/api")
 public class ClienteController {

@@ -38,7 +38,7 @@ public class Cliente {
 	@Column(name = "contrasena")
 	private String contrasena;
 
-	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "id", fetch = FetchType.LAZY)
 	private List<Cita> citas;
 
 	// Constructores
